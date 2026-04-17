@@ -67,10 +67,19 @@ nav.scrolled {
     text-decoration: none;
 }
 
+.logo-poster {
+    border-radius: 50%;
+}
+
+.hero-img {
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 2%;
+}
+
 .logo-emblem {
     width: 50px;
     height: 50px;
-    border: 2px solid var(--red);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -869,13 +878,11 @@ nav.scrolled {
 .hours-divider {
     flex: 1;
     height: 1px;
-    background: repeating-linear-gradient(
-        90deg,
-        var(--glass-border) 0px,
-        var(--glass-border) 4px,
-        transparent 4px,
-        transparent 8px
-    );
+    background: repeating-linear-gradient(90deg,
+            var(--glass-border) 0px,
+            var(--glass-border) 4px,
+            transparent 4px,
+            transparent 8px);
     margin: 0 20px;
 }
 
@@ -1215,9 +1222,19 @@ input[type="date"] {
 }
 
 @keyframes popIn {
-    from { transform: scale(0); opacity: 0; }
-    50% { transform: scale(1.2); }
-    to { transform: scale(1); opacity: 1; }
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .modal-title {
@@ -1501,6 +1518,7 @@ footer {
         opacity: 0;
         transform: translateY(40px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1512,6 +1530,7 @@ footer {
         opacity: 0;
         transform: translateX(80px) scale(0.95);
     }
+
     to {
         opacity: 1;
         transform: translateX(0) scale(1);
@@ -1523,6 +1542,7 @@ footer {
         opacity: 1;
         transform: translateX(-50%) translateY(0);
     }
+
     100% {
         opacity: 0;
         transform: translateX(-50%) translateY(14px);
@@ -1533,6 +1553,7 @@ footer {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
